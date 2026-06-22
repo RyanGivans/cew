@@ -2,24 +2,40 @@
 
 GitHub Pages-ready static website for CEW Landscape.
 
-## Replace these items
+## Pages
 
-- Formspree endpoint in `/contact/index.html`
-- Phone number in `/assets/components/footer.html` and `/contact/index.html`
-- Email address in `/assets/components/footer.html` and `/contact/index.html`
-- Logo/name in `/assets/components/header.html`
-- Placeholder project/service images
-- About page copy
+- Home
+- Services
+- Projects
+- Service Areas
+- Testimonials
+- About
+- Get a Quote
 
-## Shared Header/Footer
+## Important replacements
 
-Header and footer are stored here:
+1. Replace `https://formspree.io/f/YOUR_FORM_ID` in `contact/index.html` with the real Formspree endpoint.
+2. Replace photo placeholders with real CEW project photos.
+3. Replace the placeholder logo direction with the final logo files once created.
+4. Add individual project pages later for SEO, such as:
+   - `/projects/french-drain-fayetteville/`
+   - `/projects/front-yard-landscape-refresh/`
+   - `/projects/irrigation-sod-install/`
+5. Add city-specific landing pages later if Chad wants more local SEO:
+   - `/service-areas/fayetteville-landscaping/`
+   - `/service-areas/springdale-landscaping/`
+   - `/service-areas/rogers-landscaping/`
+   - `/service-areas/bentonville-landscaping/`
 
-- `/assets/components/header.html`
-- `/assets/components/footer.html`
+## GitHub Pages path fix
 
-They are loaded on every page using `/assets/js/main.js`.
+The JavaScript computes the base path from `assets/js/main.js`, so the shared header and footer work correctly on:
 
-## Important GitHub Pages note
+- `https://ryangivans.github.io/cew/`
+- a future custom domain
 
-Because the header/footer use `fetch()`, open the site through GitHub Pages or a local server. Opening `index.html` directly from Finder may not load the shared components.
+## Contact info currently used
+
+- Phone: (479) 685-6023
+- Email: cewlandscape@gmail.com
+- Facebook Messenger: CEW Landscape

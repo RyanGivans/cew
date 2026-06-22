@@ -1,9 +1,23 @@
+function getBasePath() {
+  const scripts = Array.from(document.scripts);
+  const thisScript = scripts.find((script) => script.src && script.src.includes('/assets/js/main.js'));
+  if (!thisScript) return './';
+  const url = new URL(thisScript.src);
+  return url.pathname.replace('assets/js/main.js', '');
+}
+
+const CEW_BASE_PATH = getBasePath();
+
+function withBase(path) {
+  return `${CEW_BASE_PATH}${path || ''}`;
+}
+
 async function loadComponent(selector, path) {
   const target = document.querySelector(selector);
   if (!target) return;
 
   try {
-    const response = await fetch(path);
+    const response = await fetch(withBase(path));
     if (!response.ok) throw new Error(`Could not load ${path}`);
     target.innerHTML = await response.text();
   } catch (error) {
@@ -11,22 +25,35 @@ async function loadComponent(selector, path) {
   }
 }
 
-async function initComponents() {
-  await loadComponent('[data-include="header"]', '/assets/components/header.html');
-  await loadComponent('[data-include="footer"]', '/assets/components/footer.html');
+function hydrateBaseLinks() {
+  document.querySelectorAll('[data-path]').forEach((link) => {
+    link.setAttribute('href', withBase(link.getAttribute('data-path')));
+  });
+}
 
+function initMobileNav() {
   const toggle = document.querySelector('[data-nav-toggle]');
   const nav = document.querySelector('[data-site-nav]');
-  if (toggle && nav) {
-    toggle.addEventListener('click', () => {
-      const isOpen = nav.classList.toggle('is-open');
-      toggle.setAttribute('aria-expanded', String(isOpen));
-    });
-  }
+  if (!toggle || !nav) return;
 
+  toggle.addEventListener('click', () => {
+    const isOpen = nav.classList.toggle('is-open');
+    toggle.setAttribute('aria-expanded', String(isOpen));
+  });
+}
+
+function initYear() {
   document.querySelectorAll('[data-year]').forEach((el) => {
     el.textContent = new Date().getFullYear();
   });
 }
 
-initComponents();
+async function initSite() {
+  await loadComponent('[data-include="header"]', 'assets/components/header.html');
+  await loadComponent('[data-include="footer"]', 'assets/components/footer.html');
+  hydrateBaseLinks();
+  initMobileNav();
+  initYear();
+}
+
+initSite();
