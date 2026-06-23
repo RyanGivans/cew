@@ -68,18 +68,32 @@
     <section class="section muted-section">
       <div class="container project-editorial">
         <div class="project-lead">
-          <p class="eyebrow">Project Proof</p>
-          <h2>Real work should be the sales pitch.</h2>
-          <p>Once you add client media, turn each project into a simple story: what was wrong, what CEW did, and what changed.</p>
-          <a class="btn btn-primary" href="projects/">View Project Examples</a>
+          <p class="eyebrow">Before & After</p>
+          <h2>Let visitors drag across the transformation.</h2>
+          <p>These are temporary sliders. When the real media arrives, each slider should use photos from the same angle so visitors can clearly compare the change.</p>
+          <a class="btn btn-primary" href="projects/">View More Transformations</a>
         </div>
         <div class="project-stack">
           <article class="project-feature">
-            <img src="assets/images/placeholders/drainage-project.svg" alt="Placeholder for French drain and landscape repair project">
+            <div class="before-after" data-before-after>
+              <div class="ba-layer"><img src="assets/images/placeholders/bed-cleanup.svg" alt="Before placeholder for drainage project"></div>
+              <div class="ba-layer ba-after"><img src="assets/images/placeholders/drainage-project.svg" alt="After placeholder for drainage project"></div>
+              <span class="ba-label before">Before</span>
+              <span class="ba-label after">After</span>
+              <span class="ba-handle" aria-hidden="true"></span>
+              <input type="range" min="0" max="100" value="50" aria-label="Compare before and after drainage project">
+            </div>
             <div><span>Drainage</span><h3>French Drain & Landscape Repair</h3><p>Resolved water issues and restored the surrounding landscape.</p></div>
           </article>
           <article class="project-feature">
-            <img src="assets/images/placeholders/front-landscape.svg" alt="Placeholder for front yard landscape upgrade project">
+            <div class="before-after" data-before-after>
+              <div class="ba-layer"><img src="assets/images/placeholders/bed-cleanup.svg" alt="Before placeholder for front landscape upgrade"></div>
+              <div class="ba-layer ba-after"><img src="assets/images/placeholders/front-landscape.svg" alt="After placeholder for front landscape upgrade"></div>
+              <span class="ba-label before">Before</span>
+              <span class="ba-label after">After</span>
+              <span class="ba-handle" aria-hidden="true"></span>
+              <input type="range" min="0" max="100" value="50" aria-label="Compare before and after front landscape project">
+            </div>
             <div><span>Landscape</span><h3>Front Yard Landscape Upgrade</h3><p>A curb appeal refresh designed to fit the home and neighborhood.</p></div>
           </article>
         </div>
