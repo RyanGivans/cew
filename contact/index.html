@@ -1,2 +1,107 @@
 <!doctype html>
-<html lang="en"><head><meta charset="utf-8"><meta name="viewport" content="width=device-width, initial-scale=1"><title>Get a Quote | CEW Landscape</title><meta name="description" content="Request a free landscaping, drainage, irrigation, grading, or outdoor improvement quote from CEW Landscape."><link rel="preconnect" href="https://fonts.googleapis.com"><link rel="preconnect" href="https://fonts.gstatic.com" crossorigin><link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;600;700;800;900&family=Montserrat:wght@700;800;900&display=swap" rel="stylesheet"><link rel="stylesheet" href="../assets/css/styles.css"></head><body><div data-include="header"></div><main><section class="page-hero"><div class="container"><p class="eyebrow">Get a Quote</p><h1>Tell CEW about your landscaping or drainage project.</h1><p class="lead" style="margin-top:20px;">Share your project details, location, and the type of work you need. Photos are helpful for drainage, grading, cleanup, and landscape improvement projects.</p></div></section><section class="section"><div class="container split"><form class="card form" action="https://formspree.io/f/YOUR_FORM_ID" method="POST"><label for="name">Name</label><input id="name" name="name" autocomplete="name" required><label for="email">Email</label><input id="email" type="email" name="email" autocomplete="email" required><label for="phone">Phone</label><input id="phone" name="phone" autocomplete="tel"><label for="city">City / Area</label><input id="city" name="city" placeholder="Fayetteville, Springdale, Rogers, Bentonville, etc."><label for="service">What do you need?</label><select id="service" name="service"><option>Landscape Design / Installation</option><option>Drainage / French Drain</option><option>Grading / Regrading</option><option>Irrigation</option><option>Patio / Retaining Wall / Outdoor Feature</option><option>Sod / Lawn / Cleanup</option><option>Not Sure Yet</option></select><label for="message">Project Details</label><textarea id="message" name="message" placeholder="Tell us what you need done, where you are located, and when you would like the work completed." required></textarea><button class="btn btn-primary" type="submit">Send Quote Request</button><p class="form-note">CEW will follow up about your project details and next steps.</p></form><aside class="card"><h3>Contact CEW Landscape</h3><p style="margin-top:14px;"><strong>Phone:</strong> <a href="tel:+14796856023">(479) 685-6023</a><br><strong>Email:</strong> <a href="mailto:cewlandscape@gmail.com">cewlandscape@gmail.com</a><br><strong>Messenger:</strong> CEW Landscape on Facebook</p><h3 style="margin-top:28px;">Helpful details to include</h3><ul class="check-list"><li>Your city or neighborhood</li><li>Type of project</li><li>Photos of the area if available</li><li>Any drainage or water issues</li><li>Preferred timeline</li></ul></aside></div></section></main><div data-include="footer"></div><script src="../assets/js/main.js"></script></body></html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Get a Quote | CEW Landscape</title>
+  <meta name="description" content="Request a free landscaping, drainage, irrigation, grading, or outdoor improvement quote from CEW Landscape.">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;600;700;800;900&family=Montserrat:wght@700;800;900&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="../assets/css/styles.css">
+  <style>
+    .quote-layout{display:grid;grid-template-columns:minmax(0,1.05fr) 380px;gap:34px;align-items:start}.quote-panel{background:var(--cream);border:1px solid var(--line);padding:28px}.quote-panel+.quote-panel{margin-top:18px}.quote-service-grid{display:grid;grid-template-columns:repeat(2,1fr);gap:1px;background:var(--line);border:1px solid var(--line);margin-top:22px}.quote-service-grid div{background:var(--cream);padding:18px}.quote-service-grid strong{display:block;margin-bottom:6px;color:var(--ink);font-family:Montserrat,Inter,sans-serif}.quote-call{background:var(--pine);color:var(--paper)}.quote-call h3,.quote-call p{color:var(--paper)}.quote-call p{opacity:.78}@media(max-width:900px){.quote-layout,.quote-service-grid{grid-template-columns:1fr}}
+  </style>
+</head>
+<body>
+  <div data-include="header"></div>
+
+  <main>
+    <section class="page-hero">
+      <div class="container">
+        <p class="eyebrow">Get a Quote</p>
+        <h1>Tell CEW what needs to be fixed, cleaned up, or built.</h1>
+        <p class="lead" style="margin-top:20px;">Share your project details, location, and the type of work you need. Photos are helpful for drainage, grading, cleanup, and landscape improvement projects.</p>
+      </div>
+    </section>
+
+    <section class="section">
+      <div class="container quote-layout">
+        <form class="card form" action="https://formspree.io/f/YOUR_FORM_ID" method="POST">
+          <p class="eyebrow">Project Details</p>
+          <h2 style="font-size:clamp(1.6rem,2.4vw,2.55rem);">Start with the property and the problem.</h2>
+          <p class="section-note">The more detail you send, the easier it is for CEW to understand the project and follow up with useful next steps.</p>
+
+          <label for="name">Name</label>
+          <input id="name" name="name" autocomplete="name" required>
+
+          <label for="email">Email</label>
+          <input id="email" type="email" name="email" autocomplete="email" required>
+
+          <label for="phone">Phone</label>
+          <input id="phone" name="phone" autocomplete="tel">
+
+          <label for="city">City / Area</label>
+          <input id="city" name="city" placeholder="Fayetteville, Springdale, Rogers, Bentonville, etc.">
+
+          <label for="service">What do you need?</label>
+          <select id="service" name="service">
+            <option>Drainage / French Drain</option>
+            <option>Landscape Design / Installation</option>
+            <option>Grading / Regrading</option>
+            <option>Irrigation</option>
+            <option>Patio / Retaining Wall / Outdoor Feature</option>
+            <option>Sod / Lawn / Cleanup</option>
+            <option>Not Sure Yet</option>
+          </select>
+
+          <label for="message">Project Details</label>
+          <textarea id="message" name="message" placeholder="Tell us what needs to be done, where the property is located, and what problem you want solved." required></textarea>
+
+          <button class="btn btn-primary" type="submit">Send Quote Request</button>
+          <p class="form-note">CEW will follow up about your project details and next steps.</p>
+        </form>
+
+        <aside>
+          <div class="quote-panel quote-call">
+            <p class="eyebrow">Call CEW</p>
+            <h3>Prefer to talk through the project?</h3>
+            <p style="margin-top:12px;">Call Chad directly about drainage, landscaping, irrigation, sod, retaining walls, patios, or cleanup work.</p>
+            <a class="btn btn-primary" style="margin-top:20px;" href="tel:+14796856023">Call (479) 685-6023</a>
+          </div>
+
+          <div class="quote-panel">
+            <h3>Helpful details to include</h3>
+            <ul class="check-list">
+              <li>Your city or neighborhood</li>
+              <li>Type of project</li>
+              <li>Photos of the area if available</li>
+              <li>Any drainage or water issues</li>
+              <li>Preferred timeline</li>
+            </ul>
+          </div>
+
+          <div class="quote-panel">
+            <h3>Common quote requests</h3>
+            <div class="quote-service-grid">
+              <div><strong>Drainage</strong><p>Standing water, runoff, soggy areas, French drains.</p></div>
+              <div><strong>Landscape</strong><p>Front yard upgrades, beds, planting, mulch, rock.</p></div>
+              <div><strong>Irrigation</strong><p>Design, install, repair, maintenance, sod support.</p></div>
+              <div><strong>Outdoor Work</strong><p>Patios, walls, outdoor kitchens, water features.</p></div>
+            </div>
+          </div>
+
+          <div class="quote-panel">
+            <h3>Contact CEW Landscape</h3>
+            <p style="margin-top:14px;"><strong>Phone:</strong> <a href="tel:+14796856023">(479) 685-6023</a><br><strong>Email:</strong> <a href="mailto:cewlandscape@gmail.com">cewlandscape@gmail.com</a><br><strong>Messenger:</strong> CEW Landscape on Facebook</p>
+          </div>
+        </aside>
+      </div>
+    </section>
+  </main>
+
+  <div class="mobile-sticky-cta"><a href="tel:+14796856023">Call CEW</a><a href="../contact/">Get Quote</a></div>
+  <div data-include="footer"></div>
+  <script src="../assets/js/main.js"></script>
+</body>
+</html>
