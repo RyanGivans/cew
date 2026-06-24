@@ -42,6 +42,26 @@ function initMobileNav() {
   });
 }
 
+function initBeforeAfterSliders() {
+  document.querySelectorAll('[data-before-after]').forEach((slider) => {
+    const range = slider.querySelector('input[type="range"]');
+    const after = slider.querySelector('.ba-after');
+    const handle = slider.querySelector('.ba-handle');
+    if (!range || !after || !handle) return;
+
+    const update = () => {
+      const value = range.value;
+      after.style.clipPath = `inset(0 0 0 ${value}%)`;
+      handle.style.left = `${value}%`;
+      slider.style.setProperty('--position', `${value}%`);
+    };
+
+    range.addEventListener('input', update);
+    range.addEventListener('change', update);
+    update();
+  });
+}
+
 function initYear() {
   document.querySelectorAll('[data-year]').forEach((el) => {
     el.textContent = new Date().getFullYear();
@@ -53,6 +73,7 @@ async function initSite() {
   await loadComponent('[data-include="footer"]', 'assets/components/footer.html');
   hydrateBaseLinks();
   initMobileNav();
+  initBeforeAfterSliders();
   initYear();
 }
 
