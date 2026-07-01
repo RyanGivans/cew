@@ -10,129 +10,89 @@
   <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;600;700;800;900&family=Montserrat:wght@700;800;900&display=swap" rel="stylesheet">
   <link rel="stylesheet" href="../assets/css/styles.css">
   <style>
-    .service-hero{padding-bottom:56px}.service-hero-card{border:1px solid var(--line);background:var(--paper);padding:12px}.service-hero-card img{width:100%;height:430px;object-fit:cover;display:block}.service-nav{display:grid;grid-template-columns:repeat(4,1fr);gap:14px;margin-top:32px}.service-nav a{display:block;border:1px solid var(--line);background:var(--paper);padding:20px;color:var(--ink);transition:.2s}.service-nav a:hover{transform:translateY(-3px);box-shadow:0 14px 34px rgba(0,0,0,.08)}.service-nav strong{display:block;font-family:Montserrat,Inter,sans-serif;font-size:1.05rem}.service-nav span{display:block;color:var(--muted);font-size:.9rem;margin-top:6px}.service-block{border-top:1px solid var(--line)}.service-intro{display:grid;grid-template-columns:minmax(280px,390px) 1fr;gap:50px;align-items:start}.sticky-side{position:sticky;top:110px}.sticky-side img{width:100%;height:300px;object-fit:cover;border:1px solid var(--line);margin-top:22px}.service-intro h2{font-size:clamp(2.2rem,4vw,4.8rem);line-height:.92;letter-spacing:-.07em;margin:8px 0 18px}.service-copy{font-size:1.03rem;color:var(--muted);max-width:680px}.feature-row{display:grid;grid-template-columns:repeat(3,1fr);gap:14px;margin:26px 0}.mini-card{border:1px solid var(--line);background:rgba(255,255,255,.55);padding:20px}.mini-card strong{display:block;color:var(--ink);font-family:Montserrat,Inter,sans-serif;margin-bottom:8px}.mini-card p{color:var(--muted);font-size:.95rem}.service-clusters{display:grid;grid-template-columns:repeat(2,1fr);gap:16px}.cluster{border:1px solid var(--line);background:var(--paper);padding:24px}.cluster h3{margin-bottom:14px}.chips{display:flex;flex-wrap:wrap;gap:9px}.chip{display:inline-flex;align-items:center;border:1px solid rgba(31,33,31,.14);background:var(--cream);border-radius:999px;padding:8px 11px;font-weight:800;font-size:.88rem;color:rgba(31,33,31,.78)}.photo-strip{display:grid;grid-template-columns:1.4fr 1fr 1fr;gap:12px;margin-top:24px}.photo-strip img{width:100%;height:230px;object-fit:cover;border:1px solid var(--line)}.photo-strip img:first-child{height:472px;grid-row:span 2}.process-cards{display:grid;grid-template-columns:repeat(6,1fr);gap:1px;background:var(--line);border:1px solid var(--line);margin-top:28px}.process-cards div{background:var(--paper);padding:20px}.process-cards strong{display:block;color:var(--ink);font-family:Montserrat,Inter,sans-serif;margin-bottom:8px}.process-cards p{font-size:.92rem;color:var(--muted)}.quiet-note{border-left:5px solid var(--gold);background:rgba(255,255,255,.55);padding:20px;margin-top:26px;color:var(--muted)}@media(max-width:1050px){.service-intro{grid-template-columns:1fr}.sticky-side{position:static}.service-nav,.feature-row,.process-cards{grid-template-columns:repeat(2,1fr)}.photo-strip{grid-template-columns:1fr 1fr}.photo-strip img:first-child{grid-row:auto;height:260px}}@media(max-width:700px){.service-nav,.feature-row,.service-clusters,.process-cards,.photo-strip{grid-template-columns:1fr}.service-hero-card img,.sticky-side img,.photo-strip img,.photo-strip img:first-child{height:260px}.chip{border-radius:14px}}
+    .services-hero{padding-bottom:58px}.hero-photo{border:1px solid var(--line);background:var(--paper);padding:12px}.hero-photo img{width:100%;height:430px;object-fit:cover;display:block}.quick-grid{display:grid;grid-template-columns:repeat(4,1fr);gap:18px;margin-top:36px}.quick-card{display:flex;flex-direction:column;min-height:100%;border:1px solid var(--line);background:var(--paper);overflow:hidden;color:var(--ink);transition:.2s}.quick-card:hover{transform:translateY(-4px);box-shadow:0 18px 40px rgba(0,0,0,.08)}.quick-card img{width:100%;height:190px;object-fit:cover}.quick-card div{padding:22px}.quick-card h3{margin-bottom:10px}.quick-card p{color:var(--muted)}.quick-card span{display:inline-block;margin-top:16px;font-weight:900;color:var(--gold)}.problem-grid{display:grid;grid-template-columns:repeat(4,1fr);gap:16px}.problem-card{background:rgba(255,255,255,.58);border:1px solid var(--line);padding:24px}.problem-card strong{display:block;font-family:Montserrat,Inter,sans-serif;color:var(--ink);font-size:1.05rem;margin-bottom:10px}.problem-card p{color:var(--muted)}.details-layout{display:grid;grid-template-columns:360px 1fr;gap:56px;align-items:start}.details-aside{position:sticky;top:106px}.details-aside h2{font-size:clamp(2.2rem,4vw,4.8rem);line-height:.92;letter-spacing:-.07em;margin:8px 0 18px}.details-aside img{width:100%;height:300px;object-fit:cover;border:1px solid var(--line);margin-top:22px}.accordion-stack{display:grid;gap:12px}.service-detail{border:1px solid var(--line);background:var(--paper)}.service-detail summary{cursor:pointer;list-style:none;padding:24px 28px;font-family:Montserrat,Inter,sans-serif;font-weight:900;font-size:1.2rem;color:var(--ink);display:flex;align-items:center;justify-content:space-between;gap:18px}.service-detail summary::-webkit-details-marker{display:none}.service-detail summary:after{content:'+';font-size:1.8rem;color:var(--gold);line-height:1}.service-detail[open] summary:after{content:'–'}.service-detail .inside{padding:0 28px 28px}.plain-list{display:grid;grid-template-columns:repeat(2,1fr);gap:10px 18px;margin:0;padding:0;list-style:none}.plain-list li{padding:10px 0;border-bottom:1px solid rgba(31,33,31,.1);color:rgba(31,33,31,.72);font-weight:700}.service-note{margin-top:22px;padding:22px;border-left:5px solid var(--gold);background:rgba(255,255,255,.55);color:var(--muted)}.process-simple{display:grid;grid-template-columns:repeat(4,1fr);gap:16px;margin-top:28px}.process-simple .card{min-height:100%}.process-number{display:inline-grid;place-items:center;width:38px;height:38px;border-radius:50%;background:var(--ink);color:var(--paper);font-weight:900;margin-bottom:14px}.photo-row{display:grid;grid-template-columns:repeat(4,1fr);gap:12px;margin-top:28px}.photo-row img{width:100%;height:210px;object-fit:cover;border:1px solid var(--line)}@media(max-width:1050px){.quick-grid,.problem-grid,.process-simple,.photo-row{grid-template-columns:repeat(2,1fr)}.details-layout{grid-template-columns:1fr}.details-aside{position:static}.details-aside img{height:260px}}@media(max-width:680px){.quick-grid,.problem-grid,.process-simple,.photo-row,.plain-list{grid-template-columns:1fr}.hero-photo img,.quick-card img,.photo-row img{height:240px}.service-detail summary{padding:22px;font-size:1.05rem}.service-detail .inside{padding:0 22px 22px}}
   </style>
 </head>
 <body>
   <div data-include="header"></div>
   <main>
-    <section class="page-hero service-hero">
+    <section class="page-hero services-hero">
       <div class="container split">
         <div>
           <p class="eyebrow">Services</p>
-          <h1>Design. Build. Maintain.</h1>
-          <p class="lead" style="margin-top:20px;">CEW Landscape provides complete outdoor solutions for residential and commercial properties throughout Northwest Arkansas. Instead of treating each service as a separate one-off task, CEW looks at the property as a whole: design, installation, water management, long-term care, and the final details that make the space feel finished.</p>
-          <div class="intro-actions" style="margin-top:28px;"><a class="btn btn-primary" href="../contact/">Get a Free Quote</a><a class="btn btn-secondary" href="../projects/">View Project Photos</a></div>
+          <h1>Complete Landscape Services for Northwest Arkansas</h1>
+          <p class="lead" style="margin-top:20px;">Design, installation, drainage, hardscapes, irrigation, and maintenance from one experienced team. CEW Landscape helps homeowners and commercial property owners improve outdoor spaces with a plan that fits the property, not just a generic service list.</p>
+          <div class="intro-actions" style="margin-top:28px;"><a class="btn btn-primary" href="../contact/">Get a Free Quote</a><a class="btn btn-secondary" href="../projects/">View Projects</a></div>
         </div>
-        <div class="service-hero-card"><img src="../assets/images/photos/0780bbad-96b1-4f73-a83f-87063b0dac47.jpeg" alt="Finished front yard landscape installation by CEW Landscape"></div>
-      </div>
-      <div class="container service-nav">
-        <a href="#design"><strong>Design & Installation</strong><span>Plans, planting, lighting, sod, renovations</span></a>
-        <a href="#hardscapes"><strong>Hardscapes</strong><span>Stone, patios, walkways, walls, features</span></a>
-        <a href="#water"><strong>Drainage & Irrigation</strong><span>Grading, French drains, repairs, water efficiency</span></a>
-        <a href="#maintenance"><strong>Maintenance</strong><span>Lawn care, bed care, commercial, property care</span></a>
-      </div>
-    </section>
-
-    <section class="section service-block" id="design">
-      <div class="container service-intro">
-        <aside class="sticky-side">
-          <p class="eyebrow">01 / Design & Installation</p>
-          <h2>Plan it right. Install it clean.</h2>
-          <p class="service-copy">Every project begins with understanding the client’s vision, evaluating the property, and creating a plan that fits the space, budget, and long-term needs.</p>
-          <img src="../assets/images/photos/97d7a317-4e02-4c11-86ef-f9a19a5ab237.jpeg" alt="CEW landscape design and planting project">
-        </aside>
-        <div>
-          <div class="feature-row">
-            <div class="mini-card"><strong>Property-first planning</strong><p>Sunlight, drainage, grading, irrigation, existing plant health, and maintenance needs are considered before recommending a direction.</p></div>
-            <div class="mini-card"><strong>Material selection</strong><p>Plants, stone, mulch, sod, and finish materials are selected to fit the property and perform well over time.</p></div>
-            <div class="mini-card"><strong>Design credit</strong><p>Free estimates are available. When design work is needed, design costs may be deducted from the final installation project.</p></div>
-          </div>
-          <div class="service-clusters">
-            <div class="cluster"><h3>Design Services</h3><div class="chips"><span class="chip">Professional Landscape Design</span><span class="chip">Landscape Master Planning</span><span class="chip">Planting Plans</span><span class="chip">Material Selection</span><span class="chip">Outdoor Living Space Design</span><span class="chip">Irrigation System Design</span><span class="chip">Landscape Lighting Design</span></div></div>
-            <div class="cluster"><h3>Installation Services</h3><div class="chips"><span class="chip">Professional Landscape Installation</span><span class="chip">Landscape Renovations</span><span class="chip">Irrigation Installation</span><span class="chip">Landscape Lighting Installation</span><span class="chip">Sod Installation</span><span class="chip">Trees, Shrubs & Perennials</span><span class="chip">Mulch & Bed Enhancements</span></div></div>
-          </div>
-          <div class="photo-strip"><img src="../assets/images/photos/77871427-5958-4a4d-9369-6659ea35a30e.jpeg" alt="Landscape bed with stone edging"><img src="../assets/images/photos/6bbdde75-b9f8-4461-be7f-46bcb73c0204.jpeg" alt="Finished front landscape bed"><img src="../assets/images/photos/81864b00-42e2-4255-aeba-ee8a541586cf.jpeg" alt="Entry landscape project"><img src="../assets/images/photos/0a1a3b77-0411-4c9d-8bb6-b4f7ebc3ec97.jpeg" alt="Brick home landscape refresh"><img src="../assets/images/photos/10e17287-480f-40f2-a58d-b2bc79e166ee.jpeg" alt="Stone border planting bed"></div>
-        </div>
-      </div>
-    </section>
-
-    <section class="section muted-section service-block" id="hardscapes">
-      <div class="container service-intro">
-        <aside class="sticky-side">
-          <p class="eyebrow">02 / Hardscapes</p>
-          <h2>Structure, access, and outdoor function.</h2>
-          <p class="service-copy">Hardscape work gives the landscape shape and usability. CEW builds stone, wall, path, and gathering-area elements that make outdoor spaces feel more complete.</p>
-          <img src="../assets/images/photos/f3eedea4-e05e-498a-abb4-9e678ebc78ea.jpeg" alt="Stone walkway by CEW Landscape">
-        </aside>
-        <div>
-          <div class="service-clusters">
-            <div class="cluster"><h3>Hardscapes & Outdoor Construction</h3><div class="chips"><span class="chip">Natural Stone Installation</span><span class="chip">Flagstone Patios</span><span class="chip">Walkways</span><span class="chip">Rock Features</span><span class="chip">Decorative Stonework</span><span class="chip">Retaining Walls</span><span class="chip">Garden Walls</span><span class="chip">Outdoor Gathering Areas</span><span class="chip">Pathways</span><span class="chip">Landscape Features</span></div></div>
-            <div class="cluster"><h3>Property Enhancements</h3><div class="chips"><span class="chip">Landscape Updates</span><span class="chip">Landscape Refreshes</span><span class="chip">Seasonal Color</span><span class="chip">Property Cleanups</span><span class="chip">Debris Removal</span><span class="chip">Bed Redefinition</span><span class="chip">Bed Enhancement</span><span class="chip">Landscape Restoration</span></div></div>
-          </div>
-          <div class="photo-strip"><img src="../assets/images/photos/5bfa13cf-a8f2-45b0-b79f-766f2d2b0530.jpeg" alt="Flagstone entry walkway"><img src="../assets/images/photos/cf933bcf-c42b-49ea-b2d7-2402c2fd777e.jpeg" alt="Stone pathway landscape feature"><img src="../assets/images/photos/8823d53a-3e6e-41e8-a81f-ae31b42cfd3d.jpeg" alt="Stone walkway construction"><img src="../assets/images/photos/fd4f4559-46d4-4b61-a5c5-9f925f3d7a3c.jpeg" alt="Stone border landscape project"><img src="../assets/images/photos/8e87c809-7de5-4676-b199-799ea6dae198.jpeg" alt="Outdoor improvement project"></div>
-        </div>
-      </div>
-    </section>
-
-    <section class="section service-block" id="water">
-      <div class="container service-intro">
-        <aside class="sticky-side">
-          <p class="eyebrow">03 / Drainage & Irrigation</p>
-          <h2>Control water before it controls the property.</h2>
-          <p class="service-copy">Drainage, grading, and irrigation work protect the lawn, planting beds, foundation areas, and hardscape materials. CEW evaluates water movement and coverage before recommending repairs or upgrades.</p>
-          <img src="../assets/images/photos/22413e8e-bad9-4cd1-b5d0-e3bbab2381fb.jpeg" alt="Drainage rock installation by CEW Landscape">
-        </aside>
-        <div>
-          <div class="feature-row">
-            <div class="mini-card"><strong>Drainage paths</strong><p>Runoff, slopes, low areas, side yards, and erosion risks are reviewed to determine a practical solution.</p></div>
-            <div class="mini-card"><strong>Irrigation coverage</strong><p>Existing systems can be assessed and adjusted so lawns, plants, and hardscape areas receive appropriate watering.</p></div>
-            <div class="mini-card"><strong>Finished appearance</strong><p>Drainage work is completed with attention to rock areas, surrounding beds, grading, and long-term upkeep.</p></div>
-          </div>
-          <div class="service-clusters">
-            <div class="cluster"><h3>Grading & Drainage Solutions</h3><div class="chips"><span class="chip">Site Grading</span><span class="chip">Site Reshaping</span><span class="chip">Drainage Correction</span><span class="chip">French Drains</span><span class="chip">Surface Drainage Improvements</span><span class="chip">Erosion Control</span><span class="chip">Yard Leveling</span><span class="chip">Yard Smoothing</span></div></div>
-            <div class="cluster"><h3>Irrigation Services</h3><div class="chips"><span class="chip">Irrigation Assessments</span><span class="chip">Irrigation Repairs</span><span class="chip">System Upgrades</span><span class="chip">Water Efficiency Improvements</span><span class="chip">Seasonal Startups</span><span class="chip">Winterization</span></div></div>
-          </div>
-          <div class="photo-strip"><img src="../assets/images/photos/da9932e3-59b1-442f-936e-9576c9ed0699.jpeg" alt="Side yard drainage rock"><img src="../assets/images/photos/eaa5c573-1907-48e3-8e25-15801eaab20b.jpeg" alt="Fence line drainage rock"><img src="../assets/images/photos/ee1f422b-3410-4a5a-abe9-fa2b9710b478.jpeg" alt="Drainage fabric and planting preparation"><img src="../assets/images/photos/cd918068-ed09-420c-9caa-2f84d8b9c53e.jpeg" alt="Before drainage corridor"><img src="../assets/images/photos/7e499c2b-d3c3-469f-bdbd-88eb1acdf1d6.jpeg" alt="Side yard before rock drainage"></div>
-        </div>
-      </div>
-    </section>
-
-    <section class="section muted-section service-block" id="maintenance">
-      <div class="container service-intro">
-        <aside class="sticky-side">
-          <p class="eyebrow">04 / Maintain</p>
-          <h2>Keep the landscape looking finished.</h2>
-          <p class="service-copy">Once installation is complete, CEW can continue maintaining the property with the same level of care. Maintenance is built around clean details, reliable service, and protecting the landscape investment.</p>
-          <img src="../assets/images/photos/65dd0203-8089-400a-ab2d-2cd24ff91a95.jpeg" alt="Seasonal bed maintenance and color">
-        </aside>
-        <div>
-          <div class="feature-row">
-            <div class="mini-card"><strong>Clean finish</strong><p>Visits can include blow-off of lawns, beds, driveways, and hardscape surfaces so the property looks professionally finished.</p></div>
-            <div class="mini-card"><strong>Detail matters</strong><p>CEW emphasizes clean edges, directional mowing, and avoiding clippings left in roadways or hardscape areas.</p></div>
-            <div class="mini-card"><strong>Ongoing recommendations</strong><p>Maintenance visits can also identify landscape issues, plant needs, and property improvements before they become larger problems.</p></div>
-          </div>
-          <div class="service-clusters">
-            <div class="cluster"><h3>Lawn Care</h3><div class="chips"><span class="chip">Professional Mowing</span><span class="chip">Weed Eating</span><span class="chip">String Trimming</span><span class="chip">Lawn Edging</span><span class="chip">Debris Pickup</span><span class="chip">Debris Removal</span></div></div>
-            <div class="cluster"><h3>Landscape Maintenance</h3><div class="chips"><span class="chip">Bed Weeding</span><span class="chip">Shrub Trimming</span><span class="chip">Hedge Trimming</span><span class="chip">Ornamental Tree Pruning</span><span class="chip">Mulch Installation</span><span class="chip">Mulch Refreshing</span><span class="chip">Seasonal Cleanup</span></div></div>
-            <div class="cluster"><h3>Property Care</h3><div class="chips"><span class="chip">Power Washing</span><span class="chip">Property Appearance Maintenance</span><span class="chip">Landscape Monitoring</span><span class="chip">Landscape Recommendations</span></div></div>
-            <div class="cluster"><h3>Commercial Landscape Services</h3><div class="chips"><span class="chip">Commercial Maintenance</span><span class="chip">Office Complexes</span><span class="chip">HOA Properties</span><span class="chip">Multi-Family Properties</span><span class="chip">Retail Centers</span><span class="chip">Enhancement Programs</span><span class="chip">Seasonal Improvements</span></div></div>
-          </div>
-          <div class="photo-strip"><img src="../assets/images/photos/887110ee-bbe9-4c9b-b35f-d1ad8e90c7ab.jpeg" alt="Finished flower bed"><img src="../assets/images/photos/f7b68be3-edb2-44d0-8a10-069842a01d2f.jpeg" alt="Planting and maintenance detail"><img src="../assets/images/photos/6cd60710-2855-49a0-82ee-797b14780927.jpeg" alt="Mulch tree ring maintenance"><img src="../assets/images/photos/e12e1f6c-9012-4b7d-871b-79e0441fab88.jpeg" alt="Bed before seasonal refresh"><img src="../assets/images/photos/33109265-4648-4913-b379-fcded16641ec.jpeg" alt="Seasonal flower bed color"></div>
-        </div>
+        <div class="hero-photo"><img src="../assets/images/photos/0780bbad-96b1-4f73-a83f-87063b0dac47.jpeg" alt="Finished front yard landscape by CEW Landscape"></div>
       </div>
     </section>
 
     <section class="section">
       <div class="container">
-        <p class="eyebrow">Process</p><h2>From first contact to final walkthrough.</h2>
-        <p class="lead" style="margin-top:18px;">CEW keeps the project organized and understandable. Clients are kept informed before, during, and after the work, with communication based on their preferred level of involvement.</p>
-        <div class="process-cards"><div><strong>1. Meet</strong><p>Initial contact, on-site meeting, and site assessment.</p></div><div><strong>2. Plan</strong><p>Design work when needed and material direction.</p></div><div><strong>3. Estimate</strong><p>Review scope, price, and project options.</p></div><div><strong>4. Revise</strong><p>Adjust design or estimate before approval.</p></div><div><strong>5. Build</strong><p>Contract, deposit, scheduling, and installation.</p></div><div><strong>6. Walkthrough</strong><p>Final approval, care notes, watering schedule, and aftercare recommendations.</p></div></div>
-        <div class="quiet-note"><strong>Free estimates are available.</strong> If design work is needed, design costs may be deducted from the final installation project.</div>
+        <p class="eyebrow">What We Do</p>
+        <h2>Four main ways CEW can help your property.</h2>
+        <div class="quick-grid">
+          <a class="quick-card" href="#details"><img src="../assets/images/photos/97d7a317-4e02-4c11-86ef-f9a19a5ab237.jpeg" alt="Landscape design and installation"><div><h3>Design & Installation</h3><p>Custom landscape plans, planting, sod, lighting, renovations, and full installation.</p><span>See what is included</span></div></a>
+          <a class="quick-card" href="#details"><img src="../assets/images/photos/22413e8e-bad9-4cd1-b5d0-e3bbab2381fb.jpeg" alt="Drainage and irrigation work"><div><h3>Drainage & Irrigation</h3><p>French drains, grading, runoff correction, irrigation repair, upgrades, and water efficiency.</p><span>See what is included</span></div></a>
+          <a class="quick-card" href="#details"><img src="../assets/images/photos/f3eedea4-e05e-498a-abb4-9e678ebc78ea.jpeg" alt="Stone walkway and hardscape"><div><h3>Hardscapes & Outdoor Features</h3><p>Stonework, walkways, retaining walls, patios, decorative rock, and outdoor gathering areas.</p><span>See what is included</span></div></a>
+          <a class="quick-card" href="#details"><img src="../assets/images/photos/65dd0203-8089-400a-ab2d-2cd24ff91a95.jpeg" alt="Maintenance and seasonal bed refresh"><div><h3>Maintenance & Property Care</h3><p>Mowing, edging, bed care, mulch, cleanup, commercial maintenance, and property appearance.</p><span>See what is included</span></div></a>
+        </div>
       </div>
     </section>
 
-    <section class="section-tight"><div class="container dark-cta"><div><h2>Need a quote?</h2><p>Send the location, photos, and a short description of what needs to be designed, fixed, cleaned up, built, or maintained.</p></div><a class="btn btn-light" href="../contact/">Get a Free Quote</a></div></section>
+    <section class="section muted-section">
+      <div class="container">
+        <p class="eyebrow">Choose Your Starting Point</p>
+        <h2>Start with the problem you are trying to solve.</h2>
+        <div class="problem-grid" style="margin-top:26px;">
+          <div class="problem-card"><strong>My yard has drainage problems</strong><p>French drains, grading, runoff correction, surface drainage improvements, erosion control, and rock drainage areas.</p></div>
+          <div class="problem-card"><strong>I want my front yard to look better</strong><p>Landscape design, bed redesign, planting, mulch, stone edging, seasonal color, and curb appeal upgrades.</p></div>
+          <div class="problem-card"><strong>I need an outdoor area built</strong><p>Stone paths, retaining walls, patios, garden walls, outdoor gathering areas, and landscape features.</p></div>
+          <div class="problem-card"><strong>I need regular maintenance</strong><p>Mowing, trimming, edging, bed care, mulch refreshing, seasonal cleanup, and commercial property maintenance.</p></div>
+        </div>
+      </div>
+    </section>
+
+    <section class="section" id="details">
+      <div class="container details-layout">
+        <aside class="details-aside">
+          <p class="eyebrow">Detailed Services</p>
+          <h2>All the details, only when you need them.</h2>
+          <p class="lead">The full service list is still here, but organized into expandable sections so the page stays clean and easy to scan.</p>
+          <img src="../assets/images/photos/77871427-5958-4a4d-9369-6659ea35a30e.jpeg" alt="CEW landscape bed and stone edging">
+        </aside>
+        <div>
+          <div class="accordion-stack">
+            <details class="service-detail" open><summary>Design Services</summary><div class="inside"><ul class="plain-list"><li>Professional Landscape Design</li><li>Landscape Master Planning</li><li>Planting Plans and Material Selection</li><li>Outdoor Living Space Design</li><li>Irrigation System Design</li><li>Landscape Lighting Design</li></ul></div></details>
+            <details class="service-detail"><summary>Installation Services</summary><div class="inside"><ul class="plain-list"><li>Professional Landscape Installation</li><li>Landscape Renovations and Upgrades</li><li>Irrigation System Installation</li><li>Landscape Lighting Installation</li><li>Sod Installation</li><li>Planting of Trees, Shrubs, and Perennials</li><li>Mulching and Bed Enhancements</li></ul></div></details>
+            <details class="service-detail"><summary>Hardscapes & Outdoor Construction</summary><div class="inside"><ul class="plain-list"><li>Natural Stone Installation</li><li>Flagstone Patios and Walkways</li><li>Rock Features and Decorative Stonework</li><li>Retaining Walls</li><li>Garden Walls</li><li>Outdoor Gathering Areas</li><li>Pathways and Landscape Features</li></ul></div></details>
+            <details class="service-detail"><summary>Grading & Drainage Solutions</summary><div class="inside"><ul class="plain-list"><li>Site Grading and Reshaping</li><li>Drainage Correction</li><li>French Drains</li><li>Surface Drainage Improvements</li><li>Erosion Control Solutions</li><li>Yard Leveling and Smoothing</li></ul></div></details>
+            <details class="service-detail"><summary>Irrigation Services</summary><div class="inside"><ul class="plain-list"><li>Irrigation System Assessments</li><li>Irrigation Repairs</li><li>System Upgrades</li><li>Water Efficiency Improvements</li><li>Seasonal Startups and Winterization</li></ul></div></details>
+            <details class="service-detail"><summary>Landscape Improvements & Enhancements</summary><div class="inside"><ul class="plain-list"><li>Landscape Updates and Refreshes</li><li>Seasonal Color Installation</li><li>Property Cleanups</li><li>Debris Removal</li><li>Bed Redefinition and Enhancement</li><li>Landscape Restoration Projects</li></ul></div></details>
+            <details class="service-detail"><summary>Lawn Care & Landscape Maintenance</summary><div class="inside"><ul class="plain-list"><li>Professional Mowing</li><li>Weed Eating and String Trimming</li><li>Lawn Edging</li><li>Debris Pickup and Removal</li><li>Bed Weeding</li><li>Shrub and Hedge Trimming</li><li>Ornamental Tree Pruning</li><li>Mulch Installation and Refreshing</li><li>Seasonal Cleanup Services</li></ul></div></details>
+            <details class="service-detail"><summary>Property Care & Commercial Services</summary><div class="inside"><ul class="plain-list"><li>Power Washing</li><li>General Property Appearance Maintenance</li><li>Landscape Monitoring and Recommendations</li><li>Commercial Property Maintenance</li><li>Office Complex Maintenance</li><li>HOA and Multi-Family Property Services</li><li>Retail Center Landscape Care</li><li>Landscape Enhancement Programs</li><li>Seasonal Property Improvements</li></ul></div></details>
+          </div>
+          <div class="service-note"><strong>Free estimates are available.</strong> When design work is needed, design costs may be deducted from the final installation project.</div>
+        </div>
+      </div>
+    </section>
+
+    <section class="section muted-section">
+      <div class="container">
+        <p class="eyebrow">Project Process</p>
+        <h2>Simple, organized, and clear from start to finish.</h2>
+        <div class="process-simple">
+          <div class="card"><span class="process-number">1</span><h3>Meet</h3><p>Initial contact, on-site meeting, and site assessment.</p></div>
+          <div class="card"><span class="process-number">2</span><h3>Plan</h3><p>Design work when needed, material selection, and project direction.</p></div>
+          <div class="card"><span class="process-number">3</span><h3>Estimate</h3><p>Review scope, pricing, options, and revisions before approval.</p></div>
+          <div class="card"><span class="process-number">4</span><h3>Build & Walkthrough</h3><p>Schedule, install, complete the project, and review care recommendations.</p></div>
+        </div>
+        <div class="photo-row"><img src="../assets/images/photos/da9932e3-59b1-442f-936e-9576c9ed0699.jpeg" alt="Drainage rock project"><img src="../assets/images/photos/5bfa13cf-a8f2-45b0-b79f-766f2d2b0530.jpeg" alt="Flagstone walkway"><img src="../assets/images/photos/887110ee-bbe9-4c9b-b35f-d1ad8e90c7ab.jpeg" alt="Finished bed maintenance"><img src="../assets/images/photos/cf933bcf-c42b-49ea-b2d7-2402c2fd777e.jpeg" alt="Stone pathway project"></div>
+      </div>
+    </section>
+
+    <section class="section-tight"><div class="container dark-cta"><div><h2>Not sure what you need?</h2><p>Tell CEW what is happening with your property and the team can help identify the right solution.</p></div><a class="btn btn-light" href="../contact/">Request a Free Estimate</a></div></section>
   </main>
   <div data-include="footer"></div>
   <script src="../assets/js/main.js"></script>
