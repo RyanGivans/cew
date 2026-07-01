@@ -4,25 +4,122 @@
   <meta charset="utf-8">
   <meta name="viewport" content="width=device-width, initial-scale=1">
   <title>Projects | CEW Landscape</title>
-  <meta name="description" content="View CEW Landscape project examples, before-and-after transformations, drainage installs, irrigation, sod, retaining walls, and landscape improvements.">
+  <meta name="description" content="View CEW Landscape project photos, landscape improvements, drainage installs, irrigation, sod, retaining walls, hardscapes, and maintenance work across Northwest Arkansas.">
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
   <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;600;700;800;900&family=Montserrat:wght@700;800;900&display=swap" rel="stylesheet">
   <link rel="stylesheet" href="../assets/css/styles.css">
+  <style>
+    .photo-showcase{background:var(--cream)}
+    .photo-grid{display:grid;grid-template-columns:repeat(3,1fr);gap:18px;margin-top:30px}
+    .photo-card{margin:0;background:var(--paper);border:1px solid var(--line);overflow:hidden}
+    .photo-card img{width:100%;height:270px;object-fit:cover;display:block}
+    .photo-card figcaption{padding:12px 14px;font-weight:900;color:var(--ink);font-size:.9rem}
+    .featured-photo{height:100%;min-height:360px;overflow:hidden;border:1px solid var(--line);background:var(--paper)}
+    .featured-photo img{width:100%;height:100%;object-fit:cover;display:block}
+    @media(max-width:900px){.photo-grid{grid-template-columns:repeat(2,1fr)}}
+    @media(max-width:620px){.photo-grid{grid-template-columns:1fr}.photo-card img{height:260px}}
+  </style>
 </head>
 <body>
   <div data-include="header"></div>
 
   <main>
-    <section class="page-hero"><div class="container"><p class="eyebrow">Projects</p><h1>Landscape improvements with a clear before and after.</h1><p class="lead" style="margin-top:20px;">From drainage corrections to front yard upgrades, CEW helps homeowners fix problem areas and finish outdoor spaces with clean, practical work.</p></div></section>
-    <section class="section"><div class="container grid-3">
-      <article class="card project-card"><div class="before-after" data-before-after><div class="ba-layer"><img src="../assets/images/placeholders/bed-cleanup.svg" alt="Yard before French drain installation"></div><div class="ba-layer ba-after"><img src="../assets/images/placeholders/drainage-project.svg" alt="Finished drainage and landscape repair"></div><span class="ba-label before">Before</span><span class="ba-label after">After</span><span class="ba-handle" aria-hidden="true"></span><input type="range" min="0" max="100" value="50" aria-label="Compare before and after French drain installation"></div><span class="eyebrow">Drainage</span><h3>French Drain Installation</h3><p><strong>Problem:</strong> Standing water and drainage issues.<br><strong>Solution:</strong> French drain with surrounding landscape repair.</p><div class="project-meta"><strong>Best for:</strong> soggy lawns, runoff, water near the home.</div></article>
-      <article class="card project-card"><div class="before-after" data-before-after><div class="ba-layer"><img src="../assets/images/placeholders/bed-cleanup.svg" alt="Front yard before landscape refresh"></div><div class="ba-layer ba-after"><img src="../assets/images/placeholders/front-landscape.svg" alt="Front yard after landscape refresh"></div><span class="ba-label before">Before</span><span class="ba-label after">After</span><span class="ba-handle" aria-hidden="true"></span><input type="range" min="0" max="100" value="50" aria-label="Compare before and after front landscape refresh"></div><span class="eyebrow">Landscape</span><h3>Front Landscape Refresh</h3><p><strong>Problem:</strong> Tired front yard beds.<br><strong>Solution:</strong> Updated layout, planting, and clean finishing details.</p><div class="project-meta"><strong>Best for:</strong> curb appeal, bed cleanup, new planting.</div></article>
-      <article class="card project-card"><div class="before-after" data-before-after><div class="ba-layer"><img src="../assets/images/placeholders/bed-cleanup.svg" alt="Lawn before sod and irrigation work"></div><div class="ba-layer ba-after"><img src="../assets/images/placeholders/irrigation-sod.svg" alt="Lawn after sod and irrigation work"></div><span class="ba-label before">Before</span><span class="ba-label after">After</span><span class="ba-handle" aria-hidden="true"></span><input type="range" min="0" max="100" value="50" aria-label="Compare before and after irrigation sod and landscape install"></div><span class="eyebrow">Irrigation</span><h3>Irrigation, Sod & Landscape Install</h3><p><strong>Problem:</strong> Yard needed a complete improvement plan.<br><strong>Solution:</strong> Landscaping, irrigation, and sod handled together.</p><div class="project-meta"><strong>Best for:</strong> unhealthy grass, new lawns, dry areas.</div></article>
-      <article class="card project-card"><div class="before-after" data-before-after><div class="ba-layer"><img src="../assets/images/placeholders/bed-cleanup.svg" alt="Sloped yard before retaining wall project"></div><div class="ba-layer ba-after"><img src="../assets/images/placeholders/retaining-wall.svg" alt="Finished retaining wall and landscape area"></div><span class="ba-label before">Before</span><span class="ba-label after">After</span><span class="ba-handle" aria-hidden="true"></span><input type="range" min="0" max="100" value="50" aria-label="Compare before and after retaining wall project"></div><span class="eyebrow">Hardscape</span><h3>Retaining Wall Project</h3><p><strong>Problem:</strong> Unusable slope or erosion issue.<br><strong>Solution:</strong> Retaining wall and finished landscape area.</p><div class="project-meta"><strong>Best for:</strong> slopes, erosion, raised beds, structure.</div></article>
-      <article class="card project-card"><div class="before-after" data-before-after><div class="ba-layer"><img src="../assets/images/placeholders/bed-cleanup.svg" alt="Backyard before patio project"></div><div class="ba-layer ba-after"><img src="../assets/images/placeholders/patio-outdoor.svg" alt="Finished patio and outdoor living space"></div><span class="ba-label before">Before</span><span class="ba-label after">After</span><span class="ba-handle" aria-hidden="true"></span><input type="range" min="0" max="100" value="50" aria-label="Compare before and after outdoor patio project"></div><span class="eyebrow">Outdoor Living</span><h3>Outdoor Patio or Kitchen</h3><p><strong>Problem:</strong> Outdoor area needed structure and usability.<br><strong>Solution:</strong> Patio or kitchen area designed for the property.</p><div class="project-meta"><strong>Best for:</strong> unused backyards, outdoor seating, entertaining.</div></article>
-      <article class="card project-card"><div class="before-after" data-before-after><div class="ba-layer"><img src="../assets/images/placeholders/bed-cleanup.svg" alt="Landscape beds before cleanup"></div><div class="ba-layer ba-after"><img src="../assets/images/placeholders/front-landscape.svg" alt="Landscape beds after mulch and cleanup"></div><span class="ba-label before">Before</span><span class="ba-label after">After</span><span class="ba-handle" aria-hidden="true"></span><input type="range" min="0" max="100" value="50" aria-label="Compare before and after bed cleanup project"></div><span class="eyebrow">Cleanup</span><h3>Mulch, Rock & Bed Cleanup</h3><p><strong>Problem:</strong> Overgrown beds and dull curb appeal.<br><strong>Solution:</strong> Cleanup, edging, mulch, rock, and fresh presentation.</p><div class="project-meta"><strong>Best for:</strong> overgrown beds, seasonal cleanup, curb appeal.</div></article>
-    </div></section>
+    <section class="page-hero">
+      <div class="container hero-grid">
+        <div>
+          <p class="eyebrow">Projects</p>
+          <h1>Real CEW Landscape project photos.</h1>
+          <p class="lead" style="margin-top:20px;">From drainage corrections and front yard upgrades to planting, bed cleanup, irrigation, hardscapes, sod, and long-term maintenance, these photos show the kind of work CEW can design, build, and maintain.</p>
+        </div>
+        <div class="featured-photo"><img src="../assets/images/photos/0780bbad-96b1-4f73-a83f-87063b0dac47.jpeg" alt="CEW Landscape featured project photo"></div>
+      </div>
+    </section>
+
+    <section class="section muted-section">
+      <div class="container grid-3">
+        <article class="card project-card"><div class="project-image"><img src="../assets/images/photos/0a1a3b77-0411-4c9d-8bb6-b4f7ebc3ec97.jpeg" alt="CEW Landscape design and installation project photo"></div><span class="eyebrow">Landscape</span><h3>Landscape Design & Installation</h3><p>Clean layout, planting, bed definition, mulch, rock, and finish details that improve curb appeal.</p></article>
+        <article class="card project-card"><div class="project-image"><img src="../assets/images/photos/10e17287-480f-40f2-a58d-b2bc79e166ee.jpeg" alt="CEW Landscape drainage and grading project photo"></div><span class="eyebrow">Drainage</span><h3>Drainage & Grading Solutions</h3><p>French drains, grading corrections, surface drainage improvements, and landscape repair.</p></article>
+        <article class="card project-card"><div class="project-image"><img src="../assets/images/photos/22413e8e-bad9-4cd1-b5d0-e3bbab2381fb.jpeg" alt="CEW Landscape hardscape or outdoor construction project photo"></div><span class="eyebrow">Hardscape</span><h3>Stonework, Patios & Walls</h3><p>Retaining walls, natural stone, pathways, outdoor gathering areas, and decorative features.</p></article>
+      </div>
+    </section>
+
+    <section class="section photo-showcase">
+      <div class="container">
+        <p class="eyebrow">Full Photo Gallery</p>
+        <h2>Uploaded CEW project photos organized into one portfolio gallery.</h2>
+        <p class="section-note">This page now uses the uploaded photos instead of the generic placeholders. The strongest images can also be moved into individual service pages as the site is refined.</p>
+        <div class="photo-grid">
+          <figure class="photo-card"><img loading="lazy" src="../assets/images/photos/0780bbad-96b1-4f73-a83f-87063b0dac47.jpeg" alt="CEW Landscape project photo"><figcaption>Featured Project</figcaption></figure>
+          <figure class="photo-card"><img loading="lazy" src="../assets/images/photos/0a1a3b77-0411-4c9d-8bb6-b4f7ebc3ec97.jpeg" alt="CEW Landscape project photo"><figcaption>Landscape Work</figcaption></figure>
+          <figure class="photo-card"><img loading="lazy" src="../assets/images/photos/10e17287-480f-40f2-a58d-b2bc79e166ee.jpeg" alt="CEW Landscape project photo"><figcaption>Drainage / Grading</figcaption></figure>
+          <figure class="photo-card"><img loading="lazy" src="../assets/images/photos/22413e8e-bad9-4cd1-b5d0-e3bbab2381fb (1).jpeg" alt="CEW Landscape project photo"><figcaption>Project Detail</figcaption></figure>
+          <figure class="photo-card"><img loading="lazy" src="../assets/images/photos/22413e8e-bad9-4cd1-b5d0-e3bbab2381fb.jpeg" alt="CEW Landscape project photo"><figcaption>Project Detail</figcaption></figure>
+          <figure class="photo-card"><img loading="lazy" src="../assets/images/photos/265db481-6fea-4214-9c74-b40acef06e4e.jpeg" alt="CEW Landscape project photo"><figcaption>Outdoor Improvement</figcaption></figure>
+          <figure class="photo-card"><img loading="lazy" src="../assets/images/photos/30942f8d-e9f3-4430-b09e-dc12024365b3.jpeg" alt="CEW Landscape project photo"><figcaption>Finished Landscape</figcaption></figure>
+          <figure class="photo-card"><img loading="lazy" src="../assets/images/photos/33109265-4648-4913-b379-fcded16641ec.jpeg" alt="CEW Landscape project photo"><figcaption>Planting & Beds</figcaption></figure>
+          <figure class="photo-card"><img loading="lazy" src="../assets/images/photos/37586a5a-0c33-40d9-ba44-e02fdd1ec061.jpeg" alt="CEW Landscape project photo"><figcaption>Landscape Detail</figcaption></figure>
+          <figure class="photo-card"><img loading="lazy" src="../assets/images/photos/37a4fc46-f29d-49d7-b3ec-b9283b76a109.jpeg" alt="CEW Landscape project photo"><figcaption>Project Photo</figcaption></figure>
+          <figure class="photo-card"><img loading="lazy" src="../assets/images/photos/3ceb3276-e74c-417b-8265-2500d0145d5c.jpeg" alt="CEW Landscape project photo"><figcaption>Project Photo</figcaption></figure>
+          <figure class="photo-card"><img loading="lazy" src="../assets/images/photos/41847367-5a36-41c3-8622-70592d1bb6a6.jpeg" alt="CEW Landscape project photo"><figcaption>Project Photo</figcaption></figure>
+          <figure class="photo-card"><img loading="lazy" src="../assets/images/photos/4b837f54-0d6f-49d0-84f7-e7d0cc435b6d.jpeg" alt="CEW Landscape project photo"><figcaption>Project Photo</figcaption></figure>
+          <figure class="photo-card"><img loading="lazy" src="../assets/images/photos/50c3bfb0-eb1f-4fe4-b400-82b49f4ad7af.jpeg" alt="CEW Landscape project photo"><figcaption>Project Photo</figcaption></figure>
+          <figure class="photo-card"><img loading="lazy" src="../assets/images/photos/52eb226f-2ae9-4e79-895a-daf95a0745ad.jpeg" alt="CEW Landscape project photo"><figcaption>Project Photo</figcaption></figure>
+          <figure class="photo-card"><img loading="lazy" src="../assets/images/photos/54fbdd4a-163a-4ae3-97ca-b03f363b3d91.jpeg" alt="CEW Landscape project photo"><figcaption>Project Photo</figcaption></figure>
+          <figure class="photo-card"><img loading="lazy" src="../assets/images/photos/5bfa13cf-a8f2-45b0-b79f-766f2d2b0530.jpeg" alt="CEW Landscape project photo"><figcaption>Project Photo</figcaption></figure>
+          <figure class="photo-card"><img loading="lazy" src="../assets/images/photos/5efe74ca-3caf-4500-ae66-d1bd959cc21c.jpeg" alt="CEW Landscape project photo"><figcaption>Project Photo</figcaption></figure>
+          <figure class="photo-card"><img loading="lazy" src="../assets/images/photos/63cba429-fadf-4bca-b61c-4318b497f416.jpeg" alt="CEW Landscape project photo"><figcaption>Project Photo</figcaption></figure>
+          <figure class="photo-card"><img loading="lazy" src="../assets/images/photos/65dd0203-8089-400a-ab2d-2cd24ff91a95.jpeg" alt="CEW Landscape project photo"><figcaption>Project Photo</figcaption></figure>
+          <figure class="photo-card"><img loading="lazy" src="../assets/images/photos/6bbdde75-b9f8-4461-be7f-46bcb73c0204.jpeg" alt="CEW Landscape project photo"><figcaption>Project Photo</figcaption></figure>
+          <figure class="photo-card"><img loading="lazy" src="../assets/images/photos/6cd60710-2855-49a0-82ee-797b14780927.jpeg" alt="CEW Landscape project photo"><figcaption>Project Photo</figcaption></figure>
+          <figure class="photo-card"><img loading="lazy" src="../assets/images/photos/77871427-5958-4a4d-9369-6659ea35a30e.jpeg" alt="CEW Landscape project photo"><figcaption>Project Photo</figcaption></figure>
+          <figure class="photo-card"><img loading="lazy" src="../assets/images/photos/7e499c2b-d3c3-469f-bdbd-88eb1acdf1d6.jpeg" alt="CEW Landscape project photo"><figcaption>Project Photo</figcaption></figure>
+          <figure class="photo-card"><img loading="lazy" src="../assets/images/photos/81864b00-42e2-4255-aeba-ee8a541586cf.jpeg" alt="CEW Landscape project photo"><figcaption>Project Photo</figcaption></figure>
+          <figure class="photo-card"><img loading="lazy" src="../assets/images/photos/8612f818-5f00-4703-84e8-24c56c82bdfb.jpeg" alt="CEW Landscape project photo"><figcaption>Project Photo</figcaption></figure>
+          <figure class="photo-card"><img loading="lazy" src="../assets/images/photos/8823d53a-3e6e-41e8-a81f-ae31b42cfd3d.jpeg" alt="CEW Landscape project photo"><figcaption>Project Photo</figcaption></figure>
+          <figure class="photo-card"><img loading="lazy" src="../assets/images/photos/887110ee-bbe9-4c9b-b35f-d1ad8e90c7ab.jpeg" alt="CEW Landscape project photo"><figcaption>Project Photo</figcaption></figure>
+          <figure class="photo-card"><img loading="lazy" src="../assets/images/photos/8e87c809-7de5-4676-b199-799ea6dae198.jpeg" alt="CEW Landscape project photo"><figcaption>Project Photo</figcaption></figure>
+          <figure class="photo-card"><img loading="lazy" src="../assets/images/photos/97d7a317-4e02-4c11-86ef-f9a19a5ab237.jpeg" alt="CEW Landscape project photo"><figcaption>Project Photo</figcaption></figure>
+          <figure class="photo-card"><img loading="lazy" src="../assets/images/photos/9ce6f079-71d9-47b7-aab0-e13b4185281c.jpeg" alt="CEW Landscape project photo"><figcaption>Project Photo</figcaption></figure>
+          <figure class="photo-card"><img loading="lazy" src="../assets/images/photos/a3d98b97-bed2-40b9-8042-16ef38be3e0c.jpeg" alt="CEW Landscape project photo"><figcaption>Project Photo</figcaption></figure>
+          <figure class="photo-card"><img loading="lazy" src="../assets/images/photos/adb68847-ccef-4d97-8995-89fc76b101a7.jpeg" alt="CEW Landscape project photo"><figcaption>Project Photo</figcaption></figure>
+          <figure class="photo-card"><img loading="lazy" src="../assets/images/photos/af71b751-b9eb-4122-bf2f-0c486dee52cb.jpeg" alt="CEW Landscape project photo"><figcaption>Project Photo</figcaption></figure>
+          <figure class="photo-card"><img loading="lazy" src="../assets/images/photos/b367710c-2225-47e8-b8db-5d3ff1d9f938.jpeg" alt="CEW Landscape project photo"><figcaption>Project Photo</figcaption></figure>
+          <figure class="photo-card"><img loading="lazy" src="../assets/images/photos/b45a4a97-2d67-454a-983b-fe0f06149b32.jpeg" alt="CEW Landscape project photo"><figcaption>Project Photo</figcaption></figure>
+          <figure class="photo-card"><img loading="lazy" src="../assets/images/photos/c5e5b6d2-135a-4a11-b6d1-ad83010f2d8d.jpeg" alt="CEW Landscape project photo"><figcaption>Project Photo</figcaption></figure>
+          <figure class="photo-card"><img loading="lazy" src="../assets/images/photos/c7161f84-e8e8-49d4-a1de-8eb4e3d3d7d4.jpeg" alt="CEW Landscape project photo"><figcaption>Project Photo</figcaption></figure>
+          <figure class="photo-card"><img loading="lazy" src="../assets/images/photos/cc4eba1c-db88-4a82-836c-fce2177f722c.jpeg" alt="CEW Landscape project photo"><figcaption>Project Photo</figcaption></figure>
+          <figure class="photo-card"><img loading="lazy" src="../assets/images/photos/cd918068-ed09-420c-9caa-2f84d8b9c53e.jpeg" alt="CEW Landscape project photo"><figcaption>Project Photo</figcaption></figure>
+          <figure class="photo-card"><img loading="lazy" src="../assets/images/photos/cec5a870-9084-41b8-81c9-df8c8fe80412.jpeg" alt="CEW Landscape project photo"><figcaption>Project Photo</figcaption></figure>
+          <figure class="photo-card"><img loading="lazy" src="../assets/images/photos/cf933bcf-c42b-49ea-b2d7-2402c2fd777e.jpeg" alt="CEW Landscape project photo"><figcaption>Project Photo</figcaption></figure>
+          <figure class="photo-card"><img loading="lazy" src="../assets/images/photos/d677d0a3-f345-4246-92ae-944aa8a2ce01.jpeg" alt="CEW Landscape project photo"><figcaption>Project Photo</figcaption></figure>
+          <figure class="photo-card"><img loading="lazy" src="../assets/images/photos/da9932e3-59b1-442f-936e-9576c9ed0699.jpeg" alt="CEW Landscape project photo"><figcaption>Project Photo</figcaption></figure>
+          <figure class="photo-card"><img loading="lazy" src="../assets/images/photos/e12e1f6c-9012-4b7d-871b-79e0441fab88.jpeg" alt="CEW Landscape project photo"><figcaption>Project Photo</figcaption></figure>
+          <figure class="photo-card"><img loading="lazy" src="../assets/images/photos/e683fd72-c06a-4175-829d-ac0dadc16e48.jpeg" alt="CEW Landscape project photo"><figcaption>Project Photo</figcaption></figure>
+          <figure class="photo-card"><img loading="lazy" src="../assets/images/photos/eaa5c573-1907-48e3-8e25-15801eaab20b.jpeg" alt="CEW Landscape project photo"><figcaption>Project Photo</figcaption></figure>
+          <figure class="photo-card"><img loading="lazy" src="../assets/images/photos/ee1f422b-3410-4a5a-abe9-fa2b9710b478.jpeg" alt="CEW Landscape project photo"><figcaption>Project Photo</figcaption></figure>
+          <figure class="photo-card"><img loading="lazy" src="../assets/images/photos/f3eedea4-e05e-498a-abb4-9e678ebc78ea.jpeg" alt="CEW Landscape project photo"><figcaption>Project Photo</figcaption></figure>
+          <figure class="photo-card"><img loading="lazy" src="../assets/images/photos/f55e00e0-0860-4ec1-ad2c-ce3e9ba3b517.jpeg" alt="CEW Landscape project photo"><figcaption>Project Photo</figcaption></figure>
+          <figure class="photo-card"><img loading="lazy" src="../assets/images/photos/f6353d33-5584-4589-b2c7-10753cd0e0f9.jpeg" alt="CEW Landscape project photo"><figcaption>Project Photo</figcaption></figure>
+          <figure class="photo-card"><img loading="lazy" src="../assets/images/photos/f7b68be3-edb2-44d0-8a10-069842a01d2f.jpeg" alt="CEW Landscape project photo"><figcaption>Project Photo</figcaption></figure>
+          <figure class="photo-card"><img loading="lazy" src="../assets/images/photos/fd4f4559-46d4-4b61-a5c5-9f925f3d7a3c.jpeg" alt="CEW Landscape project photo"><figcaption>Project Photo</figcaption></figure>
+          <figure class="photo-card"><img loading="lazy" src="../assets/images/photos/ff9688ed-714a-4e22-bed5-d401c61e9ce8.jpeg" alt="CEW Landscape project photo"><figcaption>Project Photo</figcaption></figure>
+        </div>
+      </div>
+    </section>
+
+    <section class="closing-cta">
+      <div class="container closing-layout">
+        <div>
+          <p class="eyebrow">Start a project</p>
+          <h2>Want your property to be the next finished project?</h2>
+        </div>
+        <div class="intro-actions">
+          <a class="btn btn-primary" href="tel:+14796856023">Call (479) 685-6023</a>
+          <a class="btn btn-secondary" href="../contact/">Ask About My Property</a>
+        </div>
+      </div>
+    </section>
   </main>
 
   <div data-include="footer"></div>
