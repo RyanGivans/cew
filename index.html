@@ -3,209 +3,139 @@
 <head>
   <meta charset="utf-8">
   <meta name="viewport" content="width=device-width, initial-scale=1">
-  <title>CEW Landscape | Landscape Design, Drainage & Irrigation in Northwest Arkansas</title>
-  <meta name="description" content="Landscape design, installation, drainage, grading, irrigation, patios, retaining walls, and outdoor improvements throughout Northwest Arkansas.">
+  <title>CEW Landscape | Design, Build & Maintain in Northwest Arkansas</title>
+  <meta name="description" content="CEW Landscape provides landscape design, installation, hardscapes, drainage, irrigation, and maintenance services for residential and commercial properties across Northwest Arkansas.">
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;600;700;800;900&family=Montserrat:wght@600;700;800&display=swap" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;600;700;800;900&family=Montserrat:wght@600;700;800;900&display=swap" rel="stylesheet">
   <link rel="stylesheet" href="assets/css/styles.css">
   <style>
-    .drainage-focus{background:var(--pine);color:var(--paper)}.drainage-focus h2,.drainage-focus p{color:var(--paper)}.drainage-focus .lead{color:rgba(247,244,237,.76)}.drainage-panel{display:grid;grid-template-columns:1fr 1fr;gap:1px;background:rgba(255,255,255,.16);border:1px solid rgba(255,255,255,.16);margin-top:30px}.drainage-panel div{padding:24px;background:rgba(255,255,255,.06)}.drainage-panel strong{display:block;margin-bottom:8px;color:var(--paper);font-family:Montserrat,Inter,sans-serif}.faq-list{border-top:1px solid var(--line);margin-top:30px}.faq-item{padding:24px 0;border-bottom:1px solid var(--line)}.faq-item h3{margin-bottom:8px}@media(max-width:900px){.drainage-panel{grid-template-columns:1fr}}
+    .home-hero{position:relative;min-height:760px;display:flex;align-items:center;overflow:hidden;background:var(--ink);color:var(--paper)}
+    .home-hero::before{content:"";position:absolute;inset:0;background:linear-gradient(90deg,rgba(22,29,22,.86) 0%,rgba(22,29,22,.68) 36%,rgba(22,29,22,.24) 68%,rgba(22,29,22,.1) 100%),url('assets/images/photos/cewhero.png') center/cover no-repeat;transform:scale(1.01)}
+    .home-hero::after{content:"";position:absolute;left:0;right:0;bottom:0;height:130px;background:linear-gradient(to bottom,rgba(22,29,22,0),var(--paper))}
+    .hero-inner{position:relative;z-index:2;width:100%;padding:88px 0 132px}.hero-content{max-width:760px}.home-hero .eyebrow{color:var(--gold)}.home-hero h1{font-size:clamp(4rem,8vw,8.6rem);line-height:.86;letter-spacing:-.085em;color:var(--paper);margin:14px 0 24px}.home-hero .lead{color:rgba(247,244,237,.86);font-size:1.2rem;max-width:680px}.hero-actions{display:flex;flex-wrap:wrap;gap:14px;margin-top:30px}.hero-proof{display:grid;grid-template-columns:repeat(4,1fr);gap:1px;background:rgba(255,255,255,.18);border:1px solid rgba(255,255,255,.18);margin-top:48px;max-width:900px}.hero-proof div{background:rgba(255,255,255,.08);padding:18px 20px}.hero-proof strong{display:block;color:var(--paper);font-family:Montserrat,Inter,sans-serif;font-size:1.05rem}.hero-proof span{display:block;color:rgba(247,244,237,.68);font-size:.9rem;margin-top:3px}.home-services{margin-top:-72px;position:relative;z-index:3}.service-preview-grid{display:grid;grid-template-columns:repeat(4,1fr);gap:18px}.service-preview{background:var(--paper);border:1px solid var(--line);box-shadow:0 18px 42px rgba(0,0,0,.08);overflow:hidden;color:var(--ink)}.service-preview img{width:100%;height:190px;object-fit:cover}.service-preview div{padding:22px}.service-preview h3{margin-bottom:8px}.service-preview p{color:var(--muted)}.service-preview a{display:inline-block;margin-top:14px;font-weight:900;color:var(--gold)}.section-head-centered{text-align:center;max-width:850px;margin:0 auto 36px}.section-head-centered h2{font-size:clamp(2.4rem,5vw,5.2rem);line-height:.92;letter-spacing:-.075em;margin:10px 0 18px}.section-head-centered .lead{margin-left:auto;margin-right:auto}.project-showcase{display:grid;grid-template-columns:1.25fr .75fr;gap:18px}.featured-project{position:relative;min-height:540px;overflow:hidden;background:var(--ink);color:var(--paper);display:flex;align-items:flex-end}.featured-project img{position:absolute;inset:0;width:100%;height:100%;object-fit:cover;opacity:.72}.featured-project::after{content:"";position:absolute;inset:0;background:linear-gradient(to top,rgba(22,29,22,.88),rgba(22,29,22,.08))}.featured-project div{position:relative;z-index:2;padding:34px;max-width:650px}.featured-project h3{font-size:clamp(2rem,4vw,4rem);line-height:.95;letter-spacing:-.055em;color:var(--paper);margin:8px 0 12px}.featured-project p{color:rgba(247,244,237,.78)}.project-side{display:grid;gap:18px}.mini-project{background:var(--paper);border:1px solid var(--line);overflow:hidden}.mini-project img{width:100%;height:220px;object-fit:cover}.mini-project div{padding:22px}.mini-project p{color:var(--muted)}.approach-section{background:var(--pine);color:var(--paper)}.approach-section h2,.approach-section h3{color:var(--paper)}.approach-section .lead,.approach-section p{color:rgba(247,244,237,.74)}.approach-grid{display:grid;grid-template-columns:390px 1fr;gap:54px;align-items:start}.approach-list{display:grid;grid-template-columns:repeat(2,1fr);gap:16px}.approach-card{border:1px solid rgba(255,255,255,.16);background:rgba(255,255,255,.06);padding:24px}.approach-card span{display:inline-grid;place-items:center;width:42px;height:42px;border-radius:50%;background:var(--gold);color:var(--ink);font-weight:900;margin-bottom:16px}.ba-feature{display:grid;grid-template-columns:1fr 1fr;gap:34px;align-items:center}.ba-feature h2{font-size:clamp(2.3rem,5vw,5rem);line-height:.92;letter-spacing:-.075em;margin:8px 0 18px}.before-after.home-ba{height:430px}.testimonial-home{background:var(--cream)}.quote-grid{display:grid;grid-template-columns:1.2fr .8fr;gap:18px}.big-quote,.small-quotes{border:1px solid var(--line);background:var(--paper);padding:32px}.big-quote blockquote{font-size:1.35rem;line-height:1.5;margin:0;color:var(--ink)}.quote-name{margin-top:20px;font-weight:900;color:var(--gold)}.small-quotes{display:grid;gap:18px}.small-quotes blockquote{margin:0;color:var(--muted)}.home-cta{position:relative;overflow:hidden;background:var(--ink);color:var(--paper)}.home-cta::before{content:"";position:absolute;inset:0;background:linear-gradient(90deg,rgba(22,29,22,.9),rgba(22,29,22,.58)),url('assets/images/photos/cewhero.png') center/cover no-repeat;opacity:.9}.home-cta .container{position:relative;z-index:2}.home-cta h2{color:var(--paper);font-size:clamp(2.5rem,5vw,5.2rem);line-height:.92;letter-spacing:-.075em}.home-cta p{color:rgba(247,244,237,.78);max-width:740px}.cta-layout{display:grid;grid-template-columns:1fr auto;gap:28px;align-items:end}.gallery-row{display:grid;grid-template-columns:repeat(5,1fr);gap:10px;margin-top:28px}.gallery-row img{width:100%;height:170px;object-fit:cover;border:1px solid var(--line)}@media(max-width:1050px){.hero-proof,.service-preview-grid,.gallery-row{grid-template-columns:repeat(2,1fr)}.project-showcase,.approach-grid,.ba-feature,.quote-grid,.cta-layout{grid-template-columns:1fr}.featured-project{min-height:420px}.approach-list{grid-template-columns:1fr 1fr}}@media(max-width:680px){.home-hero{min-height:680px}.home-hero h1{font-size:4rem}.hero-inner{padding:70px 0 110px}.hero-proof,.service-preview-grid,.approach-list,.gallery-row{grid-template-columns:1fr}.service-preview img,.gallery-row img{height:230px}.before-after.home-ba{height:300px}.big-quote blockquote{font-size:1.1rem}}
   </style>
 </head>
 <body>
   <div data-include="header"></div>
 
   <main>
-    <section class="home-intro">
-      <div class="container intro-layout">
-        <div class="intro-copy">
+    <section class="home-hero">
+      <div class="container hero-inner">
+        <div class="hero-content">
           <p class="eyebrow">CEW Landscape · Northwest Arkansas</p>
-          <h1>Landscaping, drainage, and outdoor work built to last.</h1>
-          <p class="lead">CEW Landscape helps homeowners improve curb appeal, fix water issues, install healthy landscapes, and build outdoor spaces that work for the property.</p>
-          <div class="intro-actions">
-            <a class="btn btn-primary" href="contact/">Plan a Landscape Project</a>
-            <a class="btn btn-secondary" href="contact/">Fix a Drainage Problem</a>
+          <h1>Design.<br>Build.<br>Maintain.</h1>
+          <p class="lead">Professional landscape design, installation, hardscapes, drainage, irrigation, and maintenance for homes and properties across Northwest Arkansas.</p>
+          <div class="hero-actions">
+            <a class="btn btn-primary" href="contact/">Request a Free Estimate</a>
+            <a class="btn btn-light" href="services/">View Services</a>
           </div>
-          <p class="small">Started in 2020. Backed by 20+ years of Northwest Arkansas landscape experience.</p>
-        </div>
-
-        <div class="hero-media">
-          <div class="before-after" data-before-after>
-            <div class="ba-layer"><img src="assets/images/placeholders/bed-cleanup.svg" alt="Yard before landscape improvement"></div>
-            <div class="ba-layer ba-after"><img src="assets/images/placeholders/front-landscape.svg" alt="Yard after professional landscape improvement"></div>
-            <span class="ba-label before">Before</span>
-            <span class="ba-label after">After</span>
-            <span class="ba-handle" aria-hidden="true"></span>
-            <input type="range" min="0" max="100" value="50" aria-label="Compare before and after landscape project">
-          </div>
-          <div class="hero-caption">
-            <div><strong>Drainage</strong><span>Move water away from problem areas.</span></div>
-            <div><strong>Landscape</strong><span>Improve curb appeal and usable space.</span></div>
-            <div><strong>Irrigation</strong><span>Support healthier lawns and planting.</span></div>
+          <div class="hero-proof">
+            <div><strong>Founded in 2020</strong><span>Local NWA company</span></div>
+            <div><strong>25+ Years</strong><span>Landscape experience</span></div>
+            <div><strong>BLA Background</strong><span>Design-led approach</span></div>
+            <div><strong>Residential & Commercial</strong><span>Built for each property</span></div>
           </div>
         </div>
       </div>
+    </section>
 
-      <div class="container service-strip">
-        <a href="services/#drainage"><span>01</span>Drainage & Grading</a>
-        <a href="services/#irrigation"><span>02</span>Irrigation</a>
-        <a href="services/#design"><span>03</span>Landscape Design</a>
-        <a href="services/#hardscapes"><span>04</span>Patios & Walls</a>
+    <section class="section home-services">
+      <div class="container service-preview-grid">
+        <article class="service-preview"><img src="assets/images/photos/97d7a317-4e02-4c11-86ef-f9a19a5ab237.jpeg" alt="Landscape design and installation project"><div><h3>Design & Installation</h3><p>Landscape plans, planting, sod, lighting, renovations, and complete installs.</p><a href="services/#service-menu">Explore services</a></div></article>
+        <article class="service-preview"><img src="assets/images/photos/22413e8e-bad9-4cd1-b5d0-e3bbab2381fb.jpeg" alt="Drainage and rock project"><div><h3>Drainage & Irrigation</h3><p>French drains, runoff correction, grading, irrigation repairs, and water efficiency.</p><a href="services/#service-menu">Explore services</a></div></article>
+        <article class="service-preview"><img src="assets/images/photos/f3eedea4-e05e-498a-abb4-9e678ebc78ea.jpeg" alt="Stone pathway hardscape project"><div><h3>Hardscapes</h3><p>Stonework, walkways, retaining walls, patios, and outdoor gathering areas.</p><a href="services/#service-menu">Explore services</a></div></article>
+        <article class="service-preview"><img src="assets/images/photos/65dd0203-8089-400a-ab2d-2cd24ff91a95.jpeg" alt="Seasonal bed refresh"><div><h3>Maintenance</h3><p>Mowing, edging, bed care, mulch, cleanup, and commercial property care.</p><a href="services/#service-menu">Explore services</a></div></article>
       </div>
     </section>
 
     <section class="section">
-      <div class="container problem-grid">
-        <div>
-          <p class="eyebrow">Common Problems We Fix</p>
-          <h2>Start with the issue. CEW will help plan the solution.</h2>
-          <p class="section-note">Many outdoor projects are not just about making the yard look better. They are about fixing water, grade, growth, access, and usability problems.</p>
+      <div class="container">
+        <div class="section-head-centered">
+          <p class="eyebrow">Featured Work</p>
+          <h2>Real outdoor improvements, designed around the property.</h2>
+          <p class="lead">CEW Landscape handles the details that make an outdoor project look finished, function correctly, and last beyond the install day.</p>
         </div>
-        <div class="problem-list">
-          <article class="problem-item"><span>01</span><div><h3>Standing water near the house</h3><p>French drains, grading, and drainage corrections help move water away from areas where it causes problems.</p><a class="card-link" href="contact/">Fix a Drainage Problem</a></div></article>
-          <article class="problem-item"><span>02</span><div><h3>Front yard looks unfinished</h3><p>Bed design, planting, mulch, rock, edging, and cleanup can make the property feel intentional and finished.</p><a class="card-link" href="contact/">Improve My Yard</a></div></article>
-          <article class="problem-item"><span>03</span><div><h3>Grass will not stay healthy</h3><p>Irrigation, sod, lawn improvements, and better planning help support a cleaner, healthier landscape.</p><a class="card-link" href="contact/">Ask About Irrigation</a></div></article>
-          <article class="problem-item"><span>04</span><div><h3>Outdoor area is unusable</h3><p>Patios, retaining walls, outdoor kitchens, water features, and grading can turn difficult spaces into useful areas.</p><a class="card-link" href="contact/">Plan an Outdoor Space</a></div></article>
+        <div class="project-showcase">
+          <a class="featured-project" href="projects/"><img src="assets/images/photos/0780bbad-96b1-4f73-a83f-87063b0dac47.jpeg" alt="Finished front landscape project"><div><p class="eyebrow">Front Landscape</p><h3>Finished curb appeal with structure, planting, and clean details.</h3><p>See more project photos and before/after examples.</p></div></a>
+          <div class="project-side">
+            <a class="mini-project" href="projects/"><img src="assets/images/photos/da9932e3-59b1-442f-936e-9576c9ed0699.jpeg" alt="Side yard drainage rock project"><div><h3>Drainage Solutions</h3><p>Rock drainage areas, runoff correction, and side-yard improvements.</p></div></a>
+            <a class="mini-project" href="projects/"><img src="assets/images/photos/5bfa13cf-a8f2-45b0-b79f-766f2d2b0530.jpeg" alt="Flagstone walkway project"><div><h3>Stonework & Walkways</h3><p>Hardscape features that improve access, structure, and visual appeal.</p></div></a>
+          </div>
+        </div>
+        <div class="gallery-row">
+          <img src="assets/images/photos/887110ee-bbe9-4c9b-b35f-d1ad8e90c7ab.jpeg" alt="Finished flower bed and rock landscape">
+          <img src="assets/images/photos/77871427-5958-4a4d-9369-6659ea35a30e.jpeg" alt="Landscape bed with stone edging">
+          <img src="assets/images/photos/cf933bcf-c42b-49ea-b2d7-2402c2fd777e.jpeg" alt="Stone pathway landscape feature">
+          <img src="assets/images/photos/eaa5c573-1907-48e3-8e25-15801eaab20b.jpeg" alt="Fence line drainage rock">
+          <img src="assets/images/photos/33109265-4648-4913-b379-fcded16641ec.jpeg" alt="Seasonal color landscape bed">
         </div>
       </div>
     </section>
 
-    <section class="section drainage-focus">
-      <div class="container problem-grid">
+    <section class="section approach-section">
+      <div class="container approach-grid">
         <div>
-          <p class="eyebrow">Drainage Solutions</p>
-          <h2>Water sitting in the yard? Fix it before it becomes a bigger problem.</h2>
-          <p class="lead" style="margin-top:18px;">Standing water, runoff, erosion, soggy lawns, and water near the foundation can damage landscaping and make outdoor areas hard to use. CEW handles drainage corrections built around the actual property.</p>
-          <div class="intro-actions" style="margin-top:24px;"><a class="btn btn-primary" href="contact/">Fix a Drainage Problem</a><a class="btn btn-secondary" href="services/#drainage">View Drainage Services</a></div>
+          <p class="eyebrow">Why CEW</p>
+          <h2>Not just yard work. A full design-build-maintain approach.</h2>
+          <p class="lead" style="margin-top:18px;">CEW looks at the full outdoor environment: how water moves, how plants will perform, how the property will be maintained, and how the finished space should feel.</p>
+          <div class="intro-actions" style="margin-top:24px;"><a class="btn btn-light" href="about/">About CEW</a><a class="btn btn-secondary" href="services/">View Services</a></div>
         </div>
-        <div>
-          <div class="before-after" data-before-after style="height:290px;">
-            <div class="ba-layer"><img src="assets/images/placeholders/bed-cleanup.svg" alt="Problem yard area before drainage work"></div>
-            <div class="ba-layer ba-after"><img src="assets/images/placeholders/drainage-project.svg" alt="Drainage improvement with finished landscape repair"></div>
-            <span class="ba-label before">Problem Area</span>
-            <span class="ba-label after">Solution</span>
-            <span class="ba-handle" aria-hidden="true"></span>
-            <input type="range" min="0" max="100" value="50" aria-label="Compare drainage problem and solution">
-          </div>
-          <div class="drainage-panel">
-            <div><strong>French drains</strong><p>Move water away from low spots, foundations, and soggy areas.</p></div>
-            <div><strong>Grading corrections</strong><p>Improve slope, runoff direction, and usable yard space.</p></div>
-            <div><strong>Landscape repair</strong><p>Restore beds, rock, mulch, sod, and finish work after drainage is corrected.</p></div>
-            <div><strong>Practical recommendations</strong><p>Get a clear plan for what needs to be fixed and why.</p></div>
-          </div>
+        <div class="approach-list">
+          <article class="approach-card"><span>1</span><h3>Thoughtful Design</h3><p>Every project starts with the client’s vision, the site conditions, and the long-term needs of the property.</p></article>
+          <article class="approach-card"><span>2</span><h3>Quality Installation</h3><p>Plants, stone, mulch, grading, irrigation, and finishing details are installed with care and craftsmanship.</p></article>
+          <article class="approach-card"><span>3</span><h3>Water Management</h3><p>Drainage and irrigation are considered as part of the whole landscape, not as afterthoughts.</p></article>
+          <article class="approach-card"><span>4</span><h3>Long-Term Care</h3><p>CEW can continue maintaining the landscape after installation to protect the investment.</p></article>
         </div>
       </div>
     </section>
 
     <section class="section muted-section">
-      <div class="container project-editorial">
-        <div class="project-lead">
+      <div class="container ba-feature">
+        <div>
           <p class="eyebrow">Before & After</p>
-          <h2>See how the right work changes the property.</h2>
-          <p>Drag across the images to compare common project transformations. Real CEW project photos can replace these as they are gathered.</p>
-          <a class="btn btn-primary" href="projects/">View More Projects</a>
+          <h2>See the difference thoughtful landscaping makes.</h2>
+          <p class="lead">Use the slider to compare a project transformation. More examples are available on the Projects page.</p>
+          <div class="intro-actions" style="margin-top:24px;"><a class="btn btn-primary" href="projects/">View Projects</a></div>
         </div>
-        <div class="project-stack">
-          <article class="project-feature">
-            <div class="before-after" data-before-after>
-              <div class="ba-layer"><img src="assets/images/placeholders/bed-cleanup.svg" alt="Yard before drainage and landscape repair"></div>
-              <div class="ba-layer ba-after"><img src="assets/images/placeholders/drainage-project.svg" alt="Finished drainage and landscape repair"></div>
-              <span class="ba-label before">Before</span>
-              <span class="ba-label after">After</span>
-              <span class="ba-handle" aria-hidden="true"></span>
-              <input type="range" min="0" max="100" value="50" aria-label="Compare before and after drainage project">
-            </div>
-            <div><span>Drainage</span><h3>French Drain & Landscape Repair</h3><p>Move water away from problem areas and restore the surrounding landscape.</p><div class="project-meta"><strong>Best for:</strong> standing water, soggy lawns, water near the foundation.</div></div>
-          </article>
-          <article class="project-feature">
-            <div class="before-after" data-before-after>
-              <div class="ba-layer"><img src="assets/images/placeholders/bed-cleanup.svg" alt="Front yard before landscape upgrade"></div>
-              <div class="ba-layer ba-after"><img src="assets/images/placeholders/front-landscape.svg" alt="Front yard after landscape upgrade"></div>
-              <span class="ba-label before">Before</span>
-              <span class="ba-label after">After</span>
-              <span class="ba-handle" aria-hidden="true"></span>
-              <input type="range" min="0" max="100" value="50" aria-label="Compare before and after front landscape project">
-            </div>
-            <div><span>Landscape</span><h3>Front Yard Landscape Upgrade</h3><p>Improve curb appeal with cleaner beds, better layout, and details that fit the home.</p><div class="project-meta"><strong>Best for:</strong> overgrown beds, dull curb appeal, unfinished entries.</div></div>
-          </article>
+        <div class="before-after home-ba" data-before-after>
+          <div class="ba-layer"><img src="assets/images/photos/af71b751-b9eb-4122-bf2f-0c486dee52cb.jpeg" alt="Front yard before landscape redesign"></div>
+          <div class="ba-layer ba-after"><img src="assets/images/photos/0780bbad-96b1-4f73-a83f-87063b0dac47.jpeg" alt="Front yard after landscape redesign"></div>
+          <span class="ba-label before">Before</span>
+          <span class="ba-label after">After</span>
+          <span class="ba-handle" aria-hidden="true"></span>
+          <input type="range" min="0" max="100" value="50" aria-label="Compare before and after landscape project">
         </div>
       </div>
     </section>
 
-    <section class="section why-section">
-      <div class="container why-grid">
-        <div>
-          <p class="eyebrow">Why CEW</p>
-          <h2>Why homeowners choose CEW Landscape.</h2>
-          <p class="section-note">CEW combines design thinking with practical installation knowledge, which matters when a project needs to look good and solve real property problems.</p>
-        </div>
-        <div class="why-list">
-          <div class="why-item"><strong>20+ years of NWA experience</strong><p>Local knowledge helps with grading, drainage, plants, soil, and property conditions.</p></div>
-          <div class="why-item"><strong>Design background</strong><p>Landscape architecture training helps projects feel planned instead of pieced together.</p></div>
-          <div class="why-item"><strong>Drainage + landscape together</strong><p>Water problems, grading, irrigation, sod, beds, and repair work can be planned as one project.</p></div>
-          <div class="why-item"><strong>Options for different budgets</strong><p>Clients can get practical recommendations that fit the home, neighborhood, and project goals.</p></div>
-        </div>
-      </div>
-    </section>
-
-    <section class="section-tight">
-      <div class="container seo-block">
-        <div>
-          <p class="eyebrow">Northwest Arkansas</p>
-          <h2>Landscaping & drainage in Fayetteville, Springdale, Rogers, Bentonville, and nearby areas.</h2>
-          <p class="lead" style="margin-top:16px;">CEW works with homeowners across Northwest Arkansas on drainage corrections, irrigation, sod, front yard landscaping, retaining walls, patios, and outdoor improvements.</p>
-        </div>
-        <a class="btn btn-secondary" href="service-areas/">View Service Areas</a>
-      </div>
-    </section>
-
-    <section class="section">
-      <div class="container problem-grid">
-        <div>
-          <p class="eyebrow">FAQ</p>
-          <h2>Questions homeowners usually ask first.</h2>
-          <p class="section-note">A good quote starts with a clear understanding of the property, the problem, and the result you want.</p>
-        </div>
-        <div class="faq-list">
-          <article class="faq-item"><h3>Do you offer free quotes?</h3><p>Yes. Send your project details, location, and photos if you have them. CEW can review the project and follow up with next steps.</p></article>
-          <article class="faq-item"><h3>Can CEW help if I do not know what I need?</h3><p>Yes. Many projects start with a problem like standing water, dead grass, overgrown beds, or an unfinished outdoor area. CEW can help identify the right approach.</p></article>
-          <article class="faq-item"><h3>Do you handle drainage problems?</h3><p>Yes. CEW handles French drains, grading corrections, runoff control, soggy areas, and landscape repair connected to drainage work.</p></article>
-          <article class="faq-item"><h3>Do you install irrigation and sod?</h3><p>Yes. CEW provides irrigation design, installation, repair, maintenance, sod, and lawn improvements.</p></article>
-          <article class="faq-item"><h3>What areas do you serve?</h3><p>CEW serves homeowners across Northwest Arkansas, including Fayetteville, Springdale, Rogers, Bentonville, and nearby communities.</p></article>
-        </div>
-      </div>
-    </section>
-
-    <section class="section testimonial-editorial">
-      <div class="container testimonial-layout">
-        <div>
+    <section class="section testimonial-home">
+      <div class="container quote-grid">
+        <div class="big-quote">
           <p class="eyebrow">Testimonials</p>
-          <h2>Local homeowners trust Chad and his crew.</h2>
+          <blockquote>“My design was perfectly executed including some tricky stone cutting for the bed border, irrigation, and plant selection. When I say ‘I know a guy,’ it’s Chad and CEW that I recommend.”</blockquote>
+          <div class="quote-name">Dave</div>
         </div>
-        <div class="quote-list">
-          <blockquote><p>Chad and his crew did a great job on our new French drain and surrounding landscape. Will be calling on him again, soon!!</p><cite>Erica H.</cite></blockquote>
-          <blockquote><p>He listened to what we wanted, made suggestions at different price points, and made sure the yard looked cohesive with the neighborhood.</p><cite>Hillary W.</cite></blockquote>
-          <blockquote><p>CEW handled landscaping, irrigation, and sod for us. They can do it all the right way. Highly recommended and we will use them again.</p><cite>Ben W.</cite></blockquote>
+        <div class="small-quotes">
+          <div><blockquote>“Chad and his crew did a wonderful job landscaping our home. From the design process through installation, it was a great experience.”</blockquote><div class="quote-name">Mark</div></div>
+          <div><blockquote>“Not only was Chad the most knowledgeable and professional, he also came in at the most reasonable price.”</blockquote><div class="quote-name">Carolyn</div></div>
+          <a class="btn btn-secondary" href="testimonials/">Read More Reviews</a>
         </div>
       </div>
     </section>
 
-    <section class="closing-cta">
-      <div class="container closing-layout">
+    <section class="section home-cta">
+      <div class="container cta-layout">
         <div>
-          <p class="eyebrow">Get a quote</p>
-          <h2>Tell CEW what needs to be fixed, cleaned up, built, or improved.</h2>
+          <p class="eyebrow">Start Your Project</p>
+          <h2>Ready to improve your outdoor space?</h2>
+          <p class="lead" style="margin-top:18px;">Whether you need a full landscape design, drainage correction, hardscape installation, irrigation improvements, or dependable maintenance, CEW Landscape is ready to help.</p>
         </div>
-        <div class="intro-actions">
-          <a class="btn btn-primary" href="tel:+14796856023">Call (479) 685-6023</a>
-          <a class="btn btn-secondary" href="contact/">Ask About My Property</a>
-        </div>
+        <div class="intro-actions"><a class="btn btn-light" href="contact/">Request a Free Estimate</a><a class="btn btn-secondary" href="tel:+14796856023">Call CEW</a></div>
       </div>
     </section>
   </main>
 
-  <div class="mobile-sticky-cta"><a href="tel:+14796856023">Call CEW</a><a href="contact/">Get Quote</a></div>
   <div data-include="footer"></div>
   <script src="assets/js/main.js"></script>
 </body>
